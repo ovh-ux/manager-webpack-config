@@ -1,0 +1,61 @@
+{
+  "name": "@ovh-ux/manager-webpack-config",
+  "description": "OVH manager shared webpack configuration",
+  "license": "BSD-3-Clause",
+  "author": "OVH SAS",
+  "version": "0.0.0",
+  "keywords": [
+    "webpack"
+  ],
+  "scripts": {
+    "test": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/generator": "^7.0.0",
+    "@babel/parser": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-angularjs-annotate": "^0.9.0",
+    "base64url": "^2.0.0",
+    "cookie": "^0.3.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.18.0",
+    "koa-connect": "^2.0.1",
+    "koa-router": "^7.4.0",
+    "husky": "^1.0.0-rc.13",
+    "less": "^2.3.1",
+    "less-loader": "^4.1.0",
+    "less-plugin-remcalc": "^0.0.1",
+    "loader-utils": "^1.1.0",
+    "lodash": "^4.17.10",
+    "mini-css-extract-plugin": "^0.4.2",
+    "raw-loader": "^0.5.1",
+    "request": "^2.88.0",
+    "script-loader": "^0.7.2",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.5.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4",
+    "webpack-serve": "^2.0.2",
+    "webpack-serve-overlay": "^0.3.0",
+    "webpackbar": "^2.6.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
