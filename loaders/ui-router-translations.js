@@ -31,7 +31,7 @@ module.exports = function uiRouterTranslations(source) {
 
   if (_.get(translations, 'length') > 0) {
     // craft js resolve code to load translations dynamically
-    let jsCode = 'dynamicTranslations($q, $translate, asyncLoader) { const imports = [';
+    let jsCode = 'translations($q, $translate, asyncLoader) { const imports = [';
     translations.forEach((translation) => {
       jsCode += ` import(\`${translation}/Messages_\${$translate.use()}.xml\`).then(i => i.default),`;
     });
