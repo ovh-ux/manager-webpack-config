@@ -14,12 +14,14 @@ module.exports = {
       app.get('/auth/check', sso.checkAuth);
     },
     clientLogLevel: 'none',
+    logLevel: 'silent',
     https: true,
     proxy: [
       {
         target: 'https://www.ovh.com',
         context: ['/engine', '/auth'],
         changeOrigin: true,
+        logLevel: 'silent',
       },
     ],
   },
