@@ -16,6 +16,7 @@ module.exports = {
     clientLogLevel: 'none',
     logLevel: 'silent',
     https: true,
+    overlay: true,
     proxy: [
       {
         target: 'https://www.ovh.com',
