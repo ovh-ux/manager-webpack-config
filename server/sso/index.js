@@ -12,15 +12,15 @@ const config = {
 };
 
 // [SSO] authentication
-function login(ctx) {
+function login(req, res) {
   console.log('[SSO] - crosslogin');
 
-  const { headers } = ctx;
+  const { headers } = req;
   headers.host = config.ssoAuth.host;
 
   const location = new Promise((resolve) => {
     proxy.get({
-      url: config.ssoAuth.baseUrl + ctx.url,
+      url: config.ssoAuth.baseUrl + req.url,
       headers,
       proxy: config.proxy ? config.proxy.host : '',
       followRedirect: false,
@@ -37,13 +37,13 @@ function login(ctx) {
         parsedCookie = cookie.parse(cookies[i]);
 
         if (parsedCookie['CA.OVH.SES']) {
-          ctx.cookies.set('CA.OVH.SES', parsedCookie['CA.OVH.SES'], { path: '/', httpOnly: true });
+          res.cookie('CA.OVH.SES', parsedCookie['CA.OVH.SES'], { path: '/', httpOnly: true });
         }
         if (parsedCookie.SESSION) {
-          ctx.cookies.set('SESSION', parsedCookie.SESSION, { path: '/', httpOnly: true });
+          res.cookie('SESSION', parsedCookie.SESSION, { path: '/', httpOnly: true });
         }
         if (parsedCookie.USERID) {
-          ctx.cookies.set('USERID', parsedCookie.USERID, { path: '/' });
+          res.cookie('USERID', parsedCookie.USERID, { path: '/' });
         }
       }
 
@@ -53,12 +53,12 @@ function login(ctx) {
     });
   });
 
-  return ctx.redirect(location);
+  return res.redirect(location);
 }
 
-async function auth(ctx) {
-  const origin = ctx.headers.host;
-  const protocol = ctx.protocol || 'http';
+async function auth(req, res) {
+  const origin = req.headers.host;
+  const protocol = req.protocol || 'http';
   const headers = {
     contentType: 'application/json',
   };
@@ -83,31 +83,31 @@ async function auth(ctx) {
     });
   });
 
-  ctx.redirect(redirectionUrl);
+  res.redirect(redirectionUrl);
 }
 
-function checkAuth(ctx) {
-  const { headers } = ctx;
+function checkAuth(req, res) {
+  const { headers } = req;
   headers.host = config.ssoAuth.host;
 
   let cookies = [];
 
   try {
-    cookies = JSON.parse(base64url.decode(ctx.query.data));
+    cookies = JSON.parse(base64url.decode(req.query.data));
 
     if (Array.isArray(cookies.cookies)) {
       cookies.cookies.forEach((c) => {
         const parsedCookie = cookie.parse(c);
 
         if (parsedCookie['CA.OVH.SES']) {
-          ctx.cookies.set('CA.OVH.SES', parsedCookie['CA.OVH.SES'], { path: '/', httpOnly: true });
+          res.cookie('CA.OVH.SES', parsedCookie['CA.OVH.SES'], { path: '/', httpOnly: true });
         }
 
         if (parsedCookie.SESSION) {
-          ctx.cookies.set('SESSION', parsedCookie.SESSION, { path: '/', httpOnly: true });
+          res.cookie('SESSION', parsedCookie.SESSION, { path: '/', httpOnly: true });
         }
         if (parsedCookie.USERID) {
-          ctx.cookies.set('USERID', parsedCookie.USERID, { path: '/' });
+          res.cookie('USERID', parsedCookie.USERID, { path: '/' });
         }
       });
     }
@@ -115,7 +115,7 @@ function checkAuth(ctx) {
     console.error(err);
   }
 
-  ctx.redirect('/');
+  res.redirect('/');
 }
 
 module.exports = {
