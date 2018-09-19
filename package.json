@@ -3,7 +3,7 @@
   "description": "OVH manager shared webpack configuration",
   "license": "BSD-3-Clause",
   "author": "OVH SAS",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "keywords": [
     "webpack"
   ],
