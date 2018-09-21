@@ -16,7 +16,7 @@ const CONFIG = {
       baseUrl: 'https://ca.ovh.com/cgi-bin/crosslogin.cgi',
     },
     us: {
-      host: 'ovhcloud.com',
+      host: 'us.ovhcloud.com',
       devLoginUrl: 'https://us.ovhcloud.com/auth/requestDevLogin/',
       baseUrl: 'https://us.ovhcloud.com/cgi-bin/crosslogin.cgi',
     },
