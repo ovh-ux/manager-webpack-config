@@ -47,10 +47,9 @@ class Sso {
         }
 
         const cookies = resp.headers['set-cookie'];
-        let parsedCookie;
 
-        for (let i = cookies.length - 1; i >= 0; i -= 1) {
-          parsedCookie = cookie.parse(cookies[i]);
+        cookies.reverse().forEach((someCookie) => {
+          const parsedCookie = cookie.parse(someCookie);
 
           if (parsedCookie['CA.OVH.SES']) {
             res.cookie('CA.OVH.SES', parsedCookie['CA.OVH.SES'], { path: '/', httpOnly: true });
@@ -61,7 +60,7 @@ class Sso {
           if (parsedCookie.USERID) {
             res.cookie('USERID', parsedCookie.USERID, { path: '/' });
           }
-        }
+        });
 
         console.log('[SSO] - Logged');
 
