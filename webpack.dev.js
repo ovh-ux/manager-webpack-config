@@ -1,19 +1,14 @@
 const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const sso = require('./server/sso');
+const Sso = require('./server/sso');
 const serverProxy = require('./server/proxy');
 
-const proxyOptions = {
-  target: 'https://www.ovh.com',
-  context: ['/engine', '/auth'],
-  changeOrigin: true,
-  logLevel: 'silent',
-};
-
 module.exports = (env) => {
-  const devProxy = [proxyOptions];
+  const region = (env.region || 'eu').toLowerCase();
+  const proxy = [serverProxy.dev(region)];
+  const sso = new Sso(region);
   if (env.local2API) {
-    devProxy.unshift(serverProxy.aapi);
+    proxy.unshift(serverProxy.aapi);
   }
   return {
     mode: 'development',
@@ -23,15 +18,15 @@ module.exports = (env) => {
     ],
     devServer: {
       before(app) {
-        app.get('/auth', sso.auth);
-        app.get('/auth/check', sso.checkAuth);
+        app.get('/auth', sso.auth.bind(sso));
+        app.get('/auth/check', sso.checkAuth.bind(sso));
       },
       clientLogLevel: 'none',
       logLevel: 'silent',
       https: true,
       overlay: true,
       port: 9000,
-      proxy: devProxy,
+      proxy,
     },
   };
 };
