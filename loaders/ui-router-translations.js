@@ -29,7 +29,10 @@ const injectImports = (source, options) => {
     // craft js resolve code to load translations dynamically
     let jsCode = 'translations($q, $translate, asyncLoader) { const imports = [';
     translations.forEach((translation) => {
-      jsCode += ` import(\`${translation}/Messages_\${$translate.use()}.xml\`).then(i => i.default),`;
+      jsCode += ` import(\`${translation}/Messages_\${$translate.use()}.xml\`)
+                    .catch(() => import(\`${translation}/Messages_\${$translate.fallbackLanguage()}.xml\`))
+                    .then(i => i.default),
+                `;
     });
     jsCode += ']; imports.forEach(p => asyncLoader.addTranslations(p)); return $q.all(imports).then(() => $translate.refresh()); }';
 
