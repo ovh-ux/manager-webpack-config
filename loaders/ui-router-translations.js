@@ -3,8 +3,9 @@ const _ = require('lodash');
 const fs = require('fs');
 const path = require('path');
 
-const injectImports = (source, options) => {
+const injectImports = (source, resourcePath, options) => {
   const errors = [];
+  const basePath = options.translationsRoot || path.dirname(resourcePath);
   let result = source;
 
   // extract translations property from ui-router state declaration
@@ -14,7 +15,7 @@ const injectImports = (source, options) => {
     // extract translations paths from array
     translations = translations.split(',').map(x => x.replace(/('|"|\s)/g, '')).filter(x => x);
     // transform each path to absolute path
-    translations = translations.map(t => path.join(options.root, t, 'translations'));
+    translations = translations.map(t => path.join(basePath, t, 'translations'));
     // report a warning for translations path that does not exists
     translations.forEach((t) => {
       if (!fs.existsSync(t)) {
@@ -62,7 +63,7 @@ module.exports = function uiRouterTranslations(source) {
   let modifiedSource = source;
 
   _.filter(parts, _.identity).forEach((part) => {
-    const { result, errors } = injectImports(part, options);
+    const { result, errors } = injectImports(part, this.resourcePath, options);
     errors.forEach(this.emitError);
     if (result !== part) {
       modifiedSource = modifiedSource.replace(part, result);
