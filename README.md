@@ -26,6 +26,10 @@ The following configuration parameters needs to be _provided_ :
 
 The following configuration parameters are _optionals_ :
  - _assets.options_: see https://github.com/webpack-contrib/copy-webpack-plugin
+ - _translationsRoot_: by default, ui-router-translation loader resolves translations
+   relatively to the current resource path. You can override this behavior by providing
+   an absolute translationsRoot path. This path will then be used to resolve translations
+   instead of current resource path.
 
 ### Example
 
