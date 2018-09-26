@@ -8,11 +8,19 @@
     "webpack"
   ],
   "scripts": {
-    "test": "eslint ."
+    "test": "eslint --quiet .",
+    "lint": "eslint --quiet --fix ."
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "main": "index.js",
@@ -32,7 +40,7 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.18.0",
-    "husky": "^1.0.0-rc.13",
+    "husky": "^1.0.0",
     "less": "^2.3.1",
     "less-loader": "^4.1.0",
     "less-plugin-remcalc": "^0.0.1",
@@ -50,9 +58,12 @@
     "webpackbar": "^2.6.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-angular": "^7.1.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "lint-staged": "^7.3.0",
     "webpack-dev-server": "^3.1.8"
   }
 }
