@@ -111,7 +111,7 @@ module.exports = (opts) => {
         // load JS files
         {
           test: /\.js$/,
-          exclude: /node_modules/, // we don't want babel to process vendors files
+          exclude: /node_modules(?!\/ovh-module)/, // we don't want babel to process vendors files
           use: [
             {
               loader: 'babel-loader', // babelify JS sources
@@ -130,7 +130,7 @@ module.exports = (opts) => {
         { // inject translation imports into JS source code,
           // given proper ui-router state 'translations' property
           test: /\.js$/,
-          exclude: /node_modules/,
+          exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
             {
