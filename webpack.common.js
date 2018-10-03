@@ -70,6 +70,23 @@ module.exports = (opts) => {
             limit: 10000,
           },
         },
+        
+        // load css files
+        {
+          test: /\.css$/,
+          use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader', // translates CSS into CommonJS
+            },
+            {
+              loader: 'resolve-url-loader', // specify relative path for Less files
+              options: {
+                root: opts.root,
+              },
+            },
+          ],
+        },
 
         // load Less files
         {
