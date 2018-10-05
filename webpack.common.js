@@ -70,12 +70,13 @@ module.exports = (opts) => {
             limit: 10000,
           },
         },
-        
+
         // load css files
         {
           test: /\.css$/,
           use: [
             MiniCssExtractPlugin.loader,
+            'cache-loader',
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -93,6 +94,7 @@ module.exports = (opts) => {
           test: /\.less$/,
           use: [
             MiniCssExtractPlugin.loader,
+            'cache-loader',
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -114,6 +116,7 @@ module.exports = (opts) => {
           test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
+            'cache-loader',
             'css-loader', // translates CSS into CommonJS
             'sass-loader', // compiles Sass to CSS
           ],
@@ -130,6 +133,7 @@ module.exports = (opts) => {
           test: /\.js$/,
           exclude: /node_modules(?!\/ovh-module)/, // we don't want babel to process vendors files
           use: [
+            'cache-loader',
             {
               loader: 'babel-loader', // babelify JS sources
               options: {
@@ -150,6 +154,7 @@ module.exports = (opts) => {
           exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
+            'cache-loader',
             {
               loader: path.resolve(__dirname, './loaders/ui-router-translations.js'),
               options: {
