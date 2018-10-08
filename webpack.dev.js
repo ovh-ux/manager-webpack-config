@@ -25,7 +25,6 @@ module.exports = (env) => {
         app.get('/auth/check', sso.checkAuth.bind(sso));
       },
       clientLogLevel: 'none',
-      logLevel: 'silent',
       https: true,
       overlay: true,
       port: 9000,
