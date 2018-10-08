@@ -1,5 +1,7 @@
 const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const TimeFixPlugin = require('time-fix-plugin');
+
 const Sso = require('./server/sso');
 const serverProxy = require('./server/proxy');
 
@@ -15,6 +17,7 @@ module.exports = (env) => {
     plugins: [
       new DuplicatePackageCheckerPlugin(),
       new FriendlyErrorsWebpackPlugin(),
+      new TimeFixPlugin(),
     ],
     devServer: {
       before(app) {

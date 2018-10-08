@@ -39,7 +39,7 @@ module.exports = (opts) => {
       new WebpackBar(),
 
       new MiniCssExtractPlugin({
-        filename: '[name].css',
+        filename: '[name].[contenthash].css',
         chunkFilename: '[id].css',
       }),
     ],
