@@ -828,6 +828,19 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
+"@ovh-ux/manager-webpack-dev-server@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/manager-webpack-dev-server/-/manager-webpack-dev-server-2.0.0.tgz#97f4ec161e483d0f1ac76cb5f7b94716bc178ff7"
+  integrity sha512-Ut9AWmUDY3Jh8YiDZi3IHMPHAKHO24ugL9b6kRK4GP52iguoaBwSxaKxwwBZXNihAF75ambK3M/0oZWDsrLLaw==
+  dependencies:
+    base64url "^3.0.0"
+    cookie "^0.3.1"
+    duplicate-package-checker-webpack-plugin "^3.0.0"
+    friendly-errors-webpack-plugin "^1.7.0"
+    request "^2.88.0"
+    time-fix-plugin "^2.0.3"
+    webpack-dev-server "^3.1.9"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -4940,18 +4953,6 @@ make-dir@^1.0.0:
   integrity sha512-2w31R7SJtieJJnQtGc7RVL2StM2vGYVfqUOvUDxH6bC6aJTxPxTF0GnIgCyu7tjockiUWAYQRbxa7vKn34s5sQ==
   dependencies:
     pify "^3.0.0"
-
-"manager-webpack-dev-server@https://github.com/frenautvh/manager-webpack-dev-server.git":
-  version "1.0.0"
-  resolved "https://github.com/frenautvh/manager-webpack-dev-server.git#f3c55aa46c1fd7cbabf13d1ac6ca3fbd69a18553"
-  dependencies:
-    base64url "^3.0.0"
-    cookie "^0.3.1"
-    duplicate-package-checker-webpack-plugin "^3.0.0"
-    friendly-errors-webpack-plugin "^1.7.0"
-    request "^2.88.0"
-    time-fix-plugin "^2.0.3"
-    webpack-dev-server "^3.1.9"
 
 map-age-cleaner@^0.1.1:
   version "0.1.2"

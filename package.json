@@ -45,7 +45,7 @@
     "less-plugin-remcalc": "^0.0.1",
     "loader-utils": "^1.1.0",
     "lodash": "^4.17.10",
-    "manager-webpack-dev-server": "https://github.com/frenautvh/manager-webpack-dev-server.git",
+    "@ovh-ux/manager-webpack-dev-server": "^2.0.0",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
