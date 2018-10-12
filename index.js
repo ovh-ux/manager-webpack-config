@@ -1,5 +1,5 @@
 const merge = require('webpack-merge');
-const devServer = require('manager-webpack-dev-server');
+const devServer = require('@ovh-ux/manager-webpack-dev-server');
 const common = require('./webpack.common');
 const prodConfig = require('./webpack.prod');
 
