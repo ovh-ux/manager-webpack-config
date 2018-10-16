@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "test": "eslint --quiet .",
-    "lint": "eslint --quiet --fix ."
+    "lint": "eslint --quiet --fix .",
+    "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags"
   },
   "lint-staged": {
     "*.js": [
