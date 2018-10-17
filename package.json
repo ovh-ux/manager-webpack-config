@@ -5,8 +5,13 @@
   "author": "OVH SAS",
   "version": "2.3.2",
   "keywords": [
-    "webpack"
-  ],
+    "manager",
+    "control-panel",
+    "configuration",
+    "shared",
+    "webpack",
+    "ovh"
+],
   "scripts": {
     "test": "eslint --quiet .",
     "lint": "eslint --quiet --fix ."
