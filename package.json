@@ -11,7 +11,7 @@
     "shared",
     "webpack",
     "ovh"
-],
+  ],
   "scripts": {
     "test": "eslint --quiet .",
     "lint": "eslint --quiet --fix .",
