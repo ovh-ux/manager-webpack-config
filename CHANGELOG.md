@@ -1,3 +1,18 @@
+<a name="2.3.3"></a>
+## [2.3.3](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.2...v2.3.3) (2018-10-18)
+
+
+### Bug Fixes
+
+* remove .npmrc file ([cd7ef2c](https://github.com/ovh-ux/manager-webpack-config/commit/cd7ef2c))
+* **dependencies:** move husky to dev dependencies ([28c4c44](https://github.com/ovh-ux/manager-webpack-config/commit/28c4c44))
+* **dev:** remove deprecated logLevel option ([bb25106](https://github.com/ovh-ux/manager-webpack-config/commit/bb25106))
+* **package.json:** add missing indentation ([4018a79](https://github.com/ovh-ux/manager-webpack-config/commit/4018a79))
+* **package.json:** update keywords list ([6c5bd56](https://github.com/ovh-ux/manager-webpack-config/commit/6c5bd56))
+* **resolve:** add modules resolve path ([4b65589](https://github.com/ovh-ux/manager-webpack-config/commit/4b65589))
+
+
+
 <a name="2.3.2"></a>
 ## [2.3.2](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.1...v2.3.2) (2018-10-08)
 
