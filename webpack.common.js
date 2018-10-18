@@ -44,6 +44,13 @@ module.exports = (opts) => {
       }),
     ],
 
+    resolve: {
+      modules: [
+        './node_modules',
+        path.resolve('./node_modules'),
+      ],
+    },
+
     resolveLoader: {
 
       // webpack module resolution paths
