@@ -1,3 +1,15 @@
+<a name="2.3.4"></a>
+## [2.3.4](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.3...v2.3.4) (2018-10-23)
+
+
+### Bug Fixes
+
+* **import:** manager-webpack-dev-server import ([b36629e](https://github.com/ovh-ux/manager-webpack-config/commit/b36629e))
+* **server:** add manager-webpack-dev-server dependency ([8917ffe](https://github.com/ovh-ux/manager-webpack-config/commit/8917ffe))
+* **server:** externalize server configuration ([af08643](https://github.com/ovh-ux/manager-webpack-config/commit/af08643))
+
+
+
 <a name="2.3.3"></a>
 ## [2.3.3](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.2...v2.3.3) (2018-10-18)
 
