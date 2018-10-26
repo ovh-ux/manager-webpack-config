@@ -1,3 +1,13 @@
+<a name="2.3.6"></a>
+## [2.3.6](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.5...v2.3.6) (2018-10-26)
+
+
+### Bug Fixes
+
+* **deps:** bump manager-webpack-dev-server to v2.0.2 ([a848709](https://github.com/ovh-ux/manager-webpack-config/commit/a848709))
+
+
+
 <a name="2.3.5"></a>
 ## [2.3.5](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.4...v2.3.5) (2018-10-26)
 
