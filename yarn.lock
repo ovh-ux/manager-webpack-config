@@ -829,16 +829,15 @@
     rimraf "^2.5.2"
 
 "@ovh-ux/manager-webpack-dev-server@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/manager-webpack-dev-server/-/manager-webpack-dev-server-2.0.1.tgz#98332a0d59027a56e53f4f58a068e3d199b1ad77"
-  integrity sha512-WrNvrb0Svg0c6VCpmB/iqBbmNty7SkgtQtqEdBqOWhuoDxRZbjLO2X0CeFudADHpQYHY6GRSYl7CavnY30flKA==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/manager-webpack-dev-server/-/manager-webpack-dev-server-2.0.2.tgz#dab3ea523c6dbd1f02230b9697afaa3d6774d698"
+  integrity sha512-8Q/QIu5SiQ0Ae2DCHDGwS+K1EzbZfHcwTySJGF5vJTLDuCugpfm4anHauZ3AG88+PG4J/UHoHIc/aHWZpQ6ZGA==
   dependencies:
     base64url "^3.0.0"
     cookie "^0.3.1"
     duplicate-package-checker-webpack-plugin "^3.0.0"
     friendly-errors-webpack-plugin "^1.7.0"
     request "^2.88.0"
-    time-fix-plugin "^2.0.3"
     webpack-dev-server "^3.1.9"
 
 "@samverschueren/stream-to-observable@^0.3.0":
@@ -7435,11 +7434,6 @@ thunky@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/thunky/-/thunky-1.0.3.tgz#f5df732453407b09191dae73e2a8cc73f381a826"
   integrity sha512-YwT8pjmNcAXBZqrubu22P4FYsh2D4dxRmnWBOL8Jk8bUcRUtc5326kx32tuTmFDAZtLOGEVNl8POAR8j896Iow==
-
-time-fix-plugin@^2.0.3:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.4.tgz#2436f837279e105902c985cd4c29eacbe9c51c0a"
-  integrity sha512-AXKqo4NI2ZrRAnO+9OYn8LwV3rwLiJHlEn9S1Ov86+i0RI4p6nR/uVjNasozJMTLs7fq/TWgPSsa7nI/kbV4UQ==
 
 timers-browserify@^2.0.4:
   version "2.0.10"
