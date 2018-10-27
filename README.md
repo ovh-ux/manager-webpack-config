@@ -1,13 +1,15 @@
 # Manager Webpack Config
 
-Extensible webpack configuration for the OVH Manager.
+> Extensible webpack configuration for the OVH Manager.
+
+[![Downloads](https://badgen.net/npm/dt/@ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config) [![Dependencies](https://badgen.net/david/dep/ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config?activeTab=dependencies) [![Dev Dependencies](https://badgen.net/david/dev/ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config?activeTab=dependencies) [![Gitter](https://badgen.net/badge/gitter/ovh-ux/blue?icon=gitter)](https://gitter.im/ovh/ux)
 
 ## Usage
 
 The webpack configuration can be imported and extended in the manager.
-To import the configuration, simply add manager-webpack-config as a devDependency :
+To import the configuration, simply add manager-webpack-config as a devDependency:
 
-```bash
+```sh
 yarn add -D @ovh-ux/manager-webpack-config
 ```
 
@@ -16,7 +18,7 @@ to be provided. Please refer to the parameters and example below.
 
 ### Parameters
 
-The following configuration parameters needs to be _provided_ :
+The following configuration parameters needs to be _provided_:
 
  - _template_: path to manager main template file
  - _basePath_: the base path of the manager
@@ -24,14 +26,14 @@ The following configuration parameters needs to be _provided_ :
  - _root_: root path of the manager
  - _assets.files_: see https://github.com/webpack-contrib/copy-webpack-plugin
 
-The following configuration parameters are _optionals_ :
+The following configuration parameters are _optionals_:
  - _assets.options_: see https://github.com/webpack-contrib/copy-webpack-plugin
  - _translationsRoot_: by default, ui-router-translation loader resolves translations
    relatively to the current resource path. You can override this behavior by providing
    an absolute translationsRoot path. This path will then be used to resolve translations
    instead of current resource path.
 
-### Example
+## Example
 
 ```js
 // import config and initialize parameters
@@ -62,3 +64,11 @@ module.exports = merge(config, {
   },
 });
 ```
+
+## Related
+
+* [manager-webpack-dev-server](https://github.com/ovh-ux/manager-webpack-dev-server) - OVH manager webpack development server configuration
+
+## License
+
+[BSD-3-Clause](LICENSE) © OVH SAS
