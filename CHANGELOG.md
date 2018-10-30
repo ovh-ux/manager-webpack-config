@@ -1,3 +1,22 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.6...v2.4.0) (2018-10-30)
+
+
+### Bug Fixes
+
+* bump component-rollup-config ([4969954](https://github.com/ovh-ux/manager-webpack-config/commit/4969954))
+* remove dead code ([71478c0](https://github.com/ovh-ux/manager-webpack-config/commit/71478c0))
+* remove unused rollup-pluginutils dep ([24757e8](https://github.com/ovh-ux/manager-webpack-config/commit/24757e8))
+* update yarn.lock ([0242c3c](https://github.com/ovh-ux/manager-webpack-config/commit/0242c3c))
+
+
+### Features
+
+* rollup plugins ([0df4b32](https://github.com/ovh-ux/manager-webpack-config/commit/0df4b32))
+* rollup plugins refactor ([ea6388f](https://github.com/ovh-ux/manager-webpack-config/commit/ea6388f))
+
+
+
 <a name="2.3.6"></a>
 ## [2.3.6](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.5...v2.3.6) (2018-10-26)
 
