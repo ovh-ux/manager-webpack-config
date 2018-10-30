@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const RemcalcPlugin = require('less-plugin-remcalc');
-const WebpackBar = require('webpackbar');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const _ = require('lodash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -34,9 +33,6 @@ module.exports = (opts) => {
       new HtmlWebpackPlugin({
         template: opts.template, // path to application's main html template
       }),
-
-      // display pretty loading bars
-      new WebpackBar(),
 
       new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
@@ -83,7 +79,6 @@ module.exports = (opts) => {
           test: /\.css$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -101,7 +96,6 @@ module.exports = (opts) => {
           test: /\.less$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -123,7 +117,6 @@ module.exports = (opts) => {
           test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
             'css-loader', // translates CSS into CommonJS
             'sass-loader', // compiles Sass to CSS
           ],
@@ -140,7 +133,6 @@ module.exports = (opts) => {
           test: /\.js$/,
           exclude: /node_modules(?!\/ovh-module)/, // we don't want babel to process vendors files
           use: [
-            'cache-loader',
             {
               loader: 'babel-loader', // babelify JS sources
               options: {
@@ -155,18 +147,26 @@ module.exports = (opts) => {
             },
           ],
         },
+
         { // inject translation imports into JS source code,
           // given proper ui-router state 'translations' property
           test: /\.js$/,
           exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
-            'cache-loader',
             {
               loader: path.resolve(__dirname, './loaders/ui-router-translations.js'),
-              options: {
-                root: opts.root,
-              },
+            },
+          ],
+        },
+
+        {
+          test: /\.js$/,
+          exclude: /node_modules(?!\/ovh-module)/,
+          enforce: 'pre',
+          use: [
+            {
+              loader: path.resolve(__dirname, './loaders/inject-translations.js'),
             },
           ],
         },
