@@ -69,6 +69,10 @@ module.exports = merge(config, {
 
 * [manager-webpack-dev-server](https://github.com/ovh-ux/manager-webpack-dev-server) - OVH manager webpack development server configuration
 
+## Contributing
+
+Always feel free to help out! Whether it's [filing bugs and feature requests](https://github.com/ovh-ux/manager-webpack-config/issues/new) or working on some of the [open issues](https://github.com/ovh-ux/manager-webpack-config/issues), our [contributing guide](CONTRIBUTING.md) will help get you started.
+
 ## License
 
 [BSD-3-Clause](LICENSE) © OVH SAS
