@@ -190,7 +190,6 @@ module.exports = (opts) => {
             },
           ],
         },
-
       ], // \rules
     }, // \module
 

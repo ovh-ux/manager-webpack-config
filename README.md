@@ -4,14 +4,16 @@
 
 [![Downloads](https://badgen.net/npm/dt/@ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config) [![Dependencies](https://badgen.net/david/dep/ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config?activeTab=dependencies) [![Dev Dependencies](https://badgen.net/david/dev/ovh-ux/manager-webpack-config)](https://npmjs.com/package/@ovh-ux/manager-webpack-config?activeTab=dependencies) [![Gitter](https://badgen.net/badge/gitter/ovh-ux/blue?icon=gitter)](https://gitter.im/ovh/ux)
 
-## Usage
-
-The webpack configuration can be imported and extended in the manager.
-To import the configuration, simply add manager-webpack-config as a devDependency:
+## Install
 
 ```sh
 yarn add -D @ovh-ux/manager-webpack-config
 ```
+
+## Usage
+
+The webpack configuration can be imported and extended in the manager.
+To import the configuration, simply add manager-webpack-config as a devDependency.
 
 In order to use and extends this configuration, some manager relative parameters needs
 to be provided. Please refer to the parameters and example below.
@@ -68,6 +70,10 @@ module.exports = merge(config, {
 ## Related
 
 * [manager-webpack-dev-server](https://github.com/ovh-ux/manager-webpack-dev-server) - OVH manager webpack development server configuration
+
+## Contributing
+
+Always feel free to help out! Whether it's [filing bugs and feature requests](https://github.com/ovh-ux/manager-webpack-config/issues/new) or working on some of the [open issues](https://github.com/ovh-ux/manager-webpack-config/issues), our [contributing guide](CONTRIBUTING.md) will help get you started.
 
 ## License
 
