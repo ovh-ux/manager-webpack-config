@@ -18,7 +18,7 @@
     "version": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "git push && git push --tags"
   },
-  "main": "index.js",
+  "main": "./src/index.js",
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/generator": "^7.0.0",
