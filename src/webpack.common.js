@@ -131,8 +131,13 @@ module.exports = (opts) => {
 
         // load translations (convert from xml to json)
         {
-          test: /\.xml$/,
-          loader: path.resolve(__dirname, './loaders/translations.js'),
+          test: /Messages_\w+_\w+\.xml$/,
+          use: [
+            'cache-loader',
+            {
+              loader: path.resolve(__dirname, './loaders/translation-xml.js'),
+            },
+          ],
         },
 
         // load JS files
@@ -155,22 +160,36 @@ module.exports = (opts) => {
             },
           ],
         },
-        { // inject translation imports into JS source code,
-          // given proper ui-router state 'translations' property
+
+        // inject translation imports into JS source code,
+        // given proper ui-router state 'translations' property
+        {
           test: /\.js$/,
           exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
             'cache-loader',
             {
-              loader: path.resolve(__dirname, './loaders/ui-router-translations.js'),
+              loader: path.resolve(__dirname, './loaders/translation-ui-router.js'),
               options: {
-                root: opts.root,
+                subdirectory: 'translations',
               },
             },
           ],
         },
 
+        // inject translation with @ngTranslationsInject comment
+        {
+          test: /\.js$/,
+          exclude: /node_modules(?!\/ovh-module)/,
+          enforce: 'pre',
+          use: [
+            'cache-loader',
+            {
+              loader: path.resolve(__dirname, './loaders/translation-inject.js'),
+            },
+          ],
+        },
       ], // \rules
     }, // \module
 
