@@ -828,10 +828,10 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@ovh-ux/component-rollup-config@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.0.tgz#bec780ee6451d57de0398f0d6839cdddc36f3289"
-  integrity sha512-ZkFlRk6UAX00w2yNc4z13QtfxOF8HBhboNI0PqUu8qOart7oIz5aAtWGkeYVQc1jvZJV2HpoKVWJub+HB8BS1Q==
+"@ovh-ux/component-rollup-config@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.1.tgz#0079d48fada54ca5b5e73c1423f5fb4c7230f480"
+  integrity sha512-TYGfghsjP0MUR2yHDcuHB2fKQWiGGvDgGbQqzvTTbRS5JX1dXLenunWG1UPsy7ih56G5vfoQowWoEk53IsIBGA==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
