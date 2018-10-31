@@ -1,3 +1,8 @@
+<a name="2.4.1"></a>
+## [2.4.1](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.0...v2.4.1) (2018-10-31)
+
+
+
 <a name="2.4.0"></a>
 # [2.4.0](https://github.com/ovh-ux/manager-webpack-config/compare/v2.3.6...v2.4.0) (2018-10-30)
 
