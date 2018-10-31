@@ -1,3 +1,13 @@
+<a name="2.4.2"></a>
+## [2.4.2](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.1...v2.4.2) (2018-10-31)
+
+
+### Bug Fixes
+
+* **loaders:** fix rollup filtering ([6d6a322](https://github.com/ovh-ux/manager-webpack-config/commit/6d6a322))
+
+
+
 <a name="2.4.1"></a>
 ## [2.4.1](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.0...v2.4.1) (2018-10-31)
 
