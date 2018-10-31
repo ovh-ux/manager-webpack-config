@@ -3,7 +3,7 @@
   "description": "OVH manager shared webpack configuration",
   "license": "BSD-3-Clause",
   "author": "OVH SAS",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "keywords": [
     "manager",
     "control-panel",
