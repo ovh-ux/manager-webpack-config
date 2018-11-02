@@ -845,9 +845,9 @@
     rimraf "^2.5.2"
 
 "@ovh-ux/component-rollup-config@^2.1.2":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.3.tgz#7db455a91a6d459ef597a02c9e725ecbd2f87f8c"
-  integrity sha512-Jo1Tu7uRHpL+u0lQavkCU7ZkOfinvKgt1w2+eEFl9vpsO/KTRvuCD+j77Rz45anpK+iySja7E6dKq2vRyGMfxw==
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.4.tgz#f9f514b5b0d460558a9b1746bfcc0e326f34f001"
+  integrity sha512-FTNHWtl995conax+bDCVCqW5kgWZ+0dq4i30neW/I66pme+imWRyFVDaLWYwkPl5i4y7eX8luuDvqvlzJJWTew==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
