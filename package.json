@@ -12,6 +12,9 @@
   ],
   "license": "BSD-3-Clause",
   "author": "OVH SAS",
+  "files": [
+    "src"
+  ],
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint --quiet --fix src",
