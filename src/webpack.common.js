@@ -6,6 +6,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const _ = require('lodash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const cacheLoader = {
+  loader: 'cache-loader',
+  options: {
+    cacheDirectory: path.resolve(process.cwd(), 'node_modules/.cache-loader'),
+  },
+};
+
 // The common webpack configuration
 
 module.exports = (opts) => {
@@ -83,7 +90,7 @@ module.exports = (opts) => {
           test: /\.css$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
+            cacheLoader,
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -101,7 +108,7 @@ module.exports = (opts) => {
           test: /\.less$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
+            cacheLoader,
             {
               loader: 'css-loader', // translates CSS into CommonJS
             },
@@ -123,7 +130,7 @@ module.exports = (opts) => {
           test: /\.scss$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'cache-loader',
+            cacheLoader,
             'css-loader', // translates CSS into CommonJS
             'sass-loader', // compiles Sass to CSS
           ],
@@ -133,7 +140,7 @@ module.exports = (opts) => {
         {
           test: /Messages_\w+_\w+\.xml$/,
           use: [
-            'cache-loader',
+            cacheLoader,
             {
               loader: path.resolve(__dirname, './loaders/translation-xml.js'),
             },
@@ -145,7 +152,7 @@ module.exports = (opts) => {
           test: /\.js$/,
           exclude: /node_modules(?!\/ovh-module)/, // we don't want babel to process vendors files
           use: [
-            'cache-loader',
+            cacheLoader,
             {
               loader: 'babel-loader', // babelify JS sources
               options: {
@@ -168,7 +175,7 @@ module.exports = (opts) => {
           exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
-            'cache-loader',
+            cacheLoader,
             {
               loader: path.resolve(__dirname, './loaders/translation-ui-router.js'),
               options: {
@@ -184,7 +191,7 @@ module.exports = (opts) => {
           exclude: /node_modules(?!\/ovh-module)/,
           enforce: 'pre',
           use: [
-            'cache-loader',
+            cacheLoader,
             {
               loader: path.resolve(__dirname, './loaders/translation-inject.js'),
             },
