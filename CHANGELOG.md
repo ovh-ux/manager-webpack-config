@@ -1,3 +1,12 @@
+## [2.4.6](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.5...v2.4.6) (2018-11-06)
+
+
+### Bug Fixes
+
+* **plugin:** add filtering option ([d09d925](https://github.com/ovh-ux/manager-webpack-config/commit/d09d925))
+
+
+
 ## [2.4.5](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.4...v2.4.5) (2018-11-06)
 
 
