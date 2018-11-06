@@ -9,7 +9,7 @@ module.exports = function translationUiRouterLoader(source) {
   const translationUiRouter = get(componentConfig, 'plugins.translationUiRouter');
   const parser = acorn.Parser.extend(dynamicImport.default);
 
-  return get(translationUiRouter(pick(options, 'subdirectory')).transform.bind({
+  return get(translationUiRouter(pick(options, ['subdirectory', 'filtering'])).transform.bind({
     parse: (code, opts = {}) => parser.parse(code, merge({
       ecmaVersion: 9,
       sourceType: 'module',
