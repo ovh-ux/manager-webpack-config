@@ -9,7 +9,7 @@ module.exports = function injectTranslationsLoader(source) {
   const translationInject = get(componentConfig, 'plugins.translationInject');
   const parser = acorn.Parser.extend(dynamicImport.default);
 
-  return get(translationInject(pick(options, 'subdirectory')).transform.bind({
+  return get(translationInject(pick(options, ['subdirectory', 'filtering'])).transform.bind({
     parse: (code, opts = {}) => parser.parse(code, merge({
       ecmaVersion: 9,
       sourceType: 'module',

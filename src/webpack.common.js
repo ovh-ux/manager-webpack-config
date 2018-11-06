@@ -180,6 +180,7 @@ module.exports = (opts) => {
               loader: path.resolve(__dirname, './loaders/translation-ui-router.js'),
               options: {
                 subdirectory: 'translations',
+                filtering: false,
               },
             },
           ],
@@ -194,6 +195,9 @@ module.exports = (opts) => {
             cacheLoader,
             {
               loader: path.resolve(__dirname, './loaders/translation-inject.js'),
+              options: {
+                filtering: false,
+              },
             },
           ],
         },
