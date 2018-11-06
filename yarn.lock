@@ -845,15 +845,14 @@
     rimraf "^2.5.2"
 
 "@ovh-ux/component-rollup-config@^2.1.2":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.4.tgz#f9f514b5b0d460558a9b1746bfcc0e326f34f001"
-  integrity sha512-FTNHWtl995conax+bDCVCqW5kgWZ+0dq4i30neW/I66pme+imWRyFVDaLWYwkPl5i4y7eX8luuDvqvlzJJWTew==
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-2.1.5.tgz#768f3b75898ae0bb993137d0876f6ade768a6309"
+  integrity sha512-C6OQu7/Kzn2/BCnnkXXdzZcir10F29HhpsGuHFS0l7dnyJ0wmGaI7rT99xuRG1qzEjwev2FzeBYLyZIkFHdNIQ==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
     babel-plugin-angularjs-annotate "^0.9.0"
     estree-walker "^0.5.2"
-    fast-xml-parser "^3.12.5"
     lodash "^4.17.11"
     magic-string "^0.25.1"
     rollup "^0.66.6"
@@ -1887,9 +1886,9 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000903"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000903.tgz#1664c52659b4a5e3c326153e29d0c1c6997b4333"
-  integrity sha512-x3npiIhv0zDc5qAj+r4rByMETsz2XkukPFsVWzwyY5r5h63XoO8msj9D65BqeNt1aBn17fsBnDDP78yFM/OAqA==
+  version "1.0.30000906"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000906.tgz#9a9e43b8690f9a0937c9fdf5e4699eee8516b982"
+  integrity sha512-PrxbTWezapS26wYU+lgGKLW7QTr5QrUWDunjlHOQ1qBoHDJruHGb9pdDKFOI1nUnkudSDPhNoan2FW0vMlwFvA==
 
 caniuse-lite@^1.0.30000889:
   version "1.0.30000890"
@@ -3510,13 +3509,6 @@ fast-levenshtein@~2.0.4:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-xml-parser@^3.12.5:
-  version "3.12.5"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.12.5.tgz#756e4da382f403f88990a62344add00948820fe0"
-  integrity sha512-g8TSGUF1a2vdFmQ29vKcYBNnwuJQQuyr6It3cjGsiD3dkUXqVWuXZQvjEkgrrCe5K8D30X125ACyxaj7XaaH8g==
-  dependencies:
-    nimnjs "^1.3.2"
-
 fastparse@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
@@ -4019,10 +4011,15 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
+graceful-fs@^4.1.11, graceful-fs@^4.1.3:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
   integrity sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
+
+graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
+  version "4.1.15"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
+  integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
 
 gzip-size@^4.1.0:
   version "4.1.0"
@@ -5946,24 +5943,6 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
-
-nimn-date-parser@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nimn-date-parser/-/nimn-date-parser-1.0.0.tgz#4ce55d1fd5ea206bbe82b76276f7b7c582139351"
-  integrity sha512-1Nf+x3EeMvHUiHsVuEhiZnwA8RMeOBVTQWfB1S2n9+i6PYCofHd2HRMD+WOHIHYshy4T4Gk8wQoCol7Hq3av8Q==
-
-nimn_schema_builder@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nimn_schema_builder/-/nimn_schema_builder-1.1.0.tgz#b370ccf5b647d66e50b2dcfb20d0aa12468cd247"
-  integrity sha512-DK5/B8CM4qwzG2URy130avcwPev4uO0ev836FbQyKo1ms6I9z/i6EJyiZ+d9xtgloxUri0W+5gfR8YbPq7SheA==
-
-nimnjs@^1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/nimnjs/-/nimnjs-1.3.2.tgz#a6a877968d87fad836375a4f616525e55079a5ba"
-  integrity sha512-TIOtI4iqkQrUM1tiM76AtTQem0c7e56SkDZ7sj1d1MfUsqRcq2ZWQvej/O+HBTZV7u/VKnwlKTDugK/75IRPPw==
-  dependencies:
-    nimn-date-parser "^1.0.0"
-    nimn_schema_builder "^1.0.0"
 
 no-case@^2.2.0:
   version "2.3.2"
