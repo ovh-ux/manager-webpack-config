@@ -1,3 +1,14 @@
+## [2.4.5](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.4...v2.4.5) (2018-11-06)
+
+
+### Bug Fixes
+
+* **deps:** upgrade component-rollup-config to v2.1.5 ([ddfb4ea](https://github.com/ovh-ux/manager-webpack-config/commit/ddfb4ea))
+* **package.json:** add missing repository entry ([ecf1c86](https://github.com/ovh-ux/manager-webpack-config/commit/ecf1c86))
+* **package.json:** specify files entry ([949b4a8](https://github.com/ovh-ux/manager-webpack-config/commit/949b4a8))
+
+
+
 ## [2.4.4](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.3...v2.4.4) (2018-11-02)
 
 

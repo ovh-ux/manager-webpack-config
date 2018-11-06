@@ -1,6 +1,6 @@
 {
   "name": "@ovh-ux/manager-webpack-config",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "OVH manager shared webpack configuration",
   "keywords": [
     "configuration",
