@@ -62,7 +62,7 @@ module.exports = merge(config, {
   }),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].[chunkhash].bundle.js',
   },
 });
 ```
