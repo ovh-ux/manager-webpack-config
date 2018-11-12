@@ -1,3 +1,12 @@
+## [2.4.7](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.6...v2.4.7) (2018-11-12)
+
+
+### Features
+
+* **webpackbar:** bump to v3.2.1 and add some options ([06b1b04](https://github.com/ovh-ux/manager-webpack-config/commit/06b1b04))
+
+
+
 ## [2.4.6](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.5...v2.4.6) (2018-11-06)
 
 
