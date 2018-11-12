@@ -43,7 +43,10 @@ module.exports = (opts) => {
       }),
 
       // display pretty loading bars
-      new WebpackBar(),
+      new WebpackBar({
+        name: 'OVH Manager',
+        color: '#59d2ef',
+      }),
 
       new MiniCssExtractPlugin({
         filename: '[name].[contenthash].css',
