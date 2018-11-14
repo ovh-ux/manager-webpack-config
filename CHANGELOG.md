@@ -1,3 +1,25 @@
+# [3.0.0](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.7...v3.0.0) (2018-11-14)
+
+
+### Bug Fixes
+
+* **deps:** upgrade component-rollup-config to v3.0.1 ([3bab3e7](https://github.com/ovh-ux/manager-webpack-config/commit/3bab3e7))
+
+
+### BREAKING CHANGES
+
+* **deps:** upgrade component-rollup-config
+
+  Before:
+
+  "@ovh-ux/component-rollup-config": "^2.1.2"
+
+  After:
+
+  "@ovh-ux/component-rollup-config": "^3.0.1"
+
+
+
 ## [2.4.7](https://github.com/ovh-ux/manager-webpack-config/compare/v2.4.6...v2.4.7) (2018-11-12)
 
 
