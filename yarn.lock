@@ -907,10 +907,10 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@ovh-ux/component-rollup-config@^5.0.0-beta.6":
-  version "5.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-5.0.0-beta.6.tgz#206c6ad7f1d2772e53c59c9482adab87236eae2d"
-  integrity sha512-BM1/r6h1xcbMOfQAIrJyWexMRs0bHXfU0iDtrmPMy5jhlGDDDr/fPHObd+g14sHjvuEGk1oljj+wCCpWCOdJIQ==
+"@ovh-ux/component-rollup-config@^5.0.0-beta.7":
+  version "5.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@ovh-ux/component-rollup-config/-/component-rollup-config-5.0.0-beta.7.tgz#c4365e668496063c0ec435d5a0e837fc16eabde9"
+  integrity sha512-uuKR1u3B8SRAPc9QcXTCb13bVmNsCGLlcK4k24UAYCQSCzFJB2CZtWE8W767MHtv95+xa0wty68KFA37ENl1IA==
   dependencies:
     "@babel/core" "^7.1.2"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
