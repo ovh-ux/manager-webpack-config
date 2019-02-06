@@ -1,3 +1,12 @@
+## [3.0.2](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.1...v3.0.2) (2019-02-05)
+
+
+### Bug Fixes
+
+* manage fallback by key instead of language ([0e01a25](https://github.com/ovh-ux/manager-webpack-config/commit/0e01a25))
+
+
+
 ## [3.0.1](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.0...v3.0.1) (2019-01-16)
 
 
@@ -261,6 +270,3 @@
 
 <a name="0.0.1"></a>
 ## 0.0.1 (2018-09-17)
-
-
-
