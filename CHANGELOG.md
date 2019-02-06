@@ -1,3 +1,12 @@
+## [3.0.3](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.2...v3.0.3) (2019-02-06)
+
+
+### Bug Fixes
+
+* **i18n:** reverse fallback and selected language ([eeb0875](https://github.com/ovh-ux/manager-webpack-config/commit/eeb0875))
+
+
+
 ## [3.0.2](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.1...v3.0.2) (2019-02-05)
 
 
