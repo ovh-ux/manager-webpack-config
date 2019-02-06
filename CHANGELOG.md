@@ -1,3 +1,12 @@
+## [3.0.4](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.3...v3.0.4) (2019-02-06)
+
+
+### Bug Fixes
+
+* **i18n:** use fallback by file ([c2e9608](https://github.com/ovh-ux/manager-webpack-config/commit/c2e9608))
+
+
+
 ## [3.0.3](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.2...v3.0.3) (2019-02-06)
 
 
