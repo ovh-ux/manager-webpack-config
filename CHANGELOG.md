@@ -1,3 +1,7 @@
+## [3.0.6](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.5...v3.0.6) (2019-04-23)
+
+
+
 ## [3.0.5](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.4...v3.0.5) (2019-04-05)
 
 
