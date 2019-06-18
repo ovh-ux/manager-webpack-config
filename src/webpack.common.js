@@ -214,9 +214,23 @@ module.exports = (opts) => {
 
         // vendors bundle containing node_modules source code
         cacheGroups: {
+          bower: {
+            chunks: 'initial',
+            test: /[\\/]node_modules[\\/]@bower_components[\\/]/,
+            name: 'bower',
+            enforce: true,
+            priority: 1,
+          },
+          ovh: {
+            chunks: 'initial',
+            test: /[\\/]node_modules[\\/]@ovh-ux[\\/]/,
+            name: 'ovh',
+            enforce: true,
+            priority: 1,
+          },
           vendor: {
             chunks: 'initial',
-            test: path.resolve(process.cwd(), 'node_modules'),
+            test: /[\\/]node_modules[\\/]/,
             name: 'vendor',
             enforce: true,
           },
