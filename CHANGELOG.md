@@ -1,3 +1,12 @@
+## [3.0.8](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.7...v3.0.8) (2019-06-18)
+
+
+### Performance Improvements
+
+* upgrade rules for cachedGroup ([c2eec6e](https://github.com/ovh-ux/manager-webpack-config/commit/c2eec6e))
+
+
+
 ## [3.0.7](https://github.com/ovh-ux/manager-webpack-config/compare/v3.0.6...v3.0.7) (2019-04-29)
 
 
